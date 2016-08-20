@@ -1,2 +1,2 @@
 # triangle-javasciprt
-half-triangle
+with two loop
