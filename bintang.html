@@ -50,12 +50,11 @@
                             text += '1';
                         }
                         else {
-                            text += "&nbsp&nbsp"
+                            text += "&nbsp&nbsp";
                         }
-                        text += "";
                     }
                     else {
-                        text += "&nbsp&nbsp"
+                        text += "&nbsp&nbsp";
                     }
 
                 }
@@ -66,8 +65,42 @@
             // document.getElementById("bintang").innerHTML = batas;
         }
 
+        function bintang4(angka) {
+            var tengah = angka/2;
+            var satu = tengah - 1;
+            var dua = tengah + 1;
+            var tiga = -tengah;
+            var empat = (tengah * 4) - tengah;
+
+            for (var a=0; a<=angka; a++){
+                for(var b=0; b<=angka; b++){
+                    if (b <= satu || b >= dua) {
+                        text += '&nbsp&nbsp';
+                    }
+                    else if (a >= tengah) {
+                        if (b >= tiga && b <= empat) {
+                            text += "1";
+                        }
+                        else {
+                            text += '&nbsp&nbsp';
+                        }
+                    }
+                    else {
+                        text += "1";
+                    }
+                }
+                satu--;
+                dua++;
+                tiga++;
+                empat-=1;
+                text += "<br/>";
+            }
+            document.getElementById("bintang").innerHTML = text;
+        }
+
         bintang2();
         bintang();
         bintang3(19);
+        bintang4(8);
     </script>
 </html>
