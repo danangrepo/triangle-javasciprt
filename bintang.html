@@ -21,7 +21,7 @@
             // }
             for (var a=0; a<=10; a++) {
                 for (var b=0; b<=a; b++) {
-                    text += 1;
+                    text += '1';
                 }
                 text += "<br>";
             }
@@ -31,7 +31,7 @@
         function bintang2 () {
             for (var a=10; a>=0; a--) {
                 for (var b=a; b>=0; b--) {
-                    text += 1;
+                    text += '1';
                 }
                 text += "<br>";
             }
@@ -43,11 +43,11 @@
             for (var a=0; a<=star*2; a++) {
                 for (var b=star*2; b>=0; b--) {
                     if ((b <= batas && b >= star)) {
-                        text += 1;
+                        text += '1';
                     }
                     else if (a >= star+1 && b <= star*2 && b >= star){
                         if (b <= a) {
-                            text += 1;
+                            text += '1';
                         }
                         else {
                             text += "&nbsp&nbsp"
