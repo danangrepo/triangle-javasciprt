@@ -38,29 +38,6 @@
             document.getElementById("bintang").innerHTML = text;
         }
 
-        function bintang3 () {
-            var batas = 10;
-            for (var a=20; a>=0; a--) {
-                for (var b=0; b<=a; b++) {
-                    text += "";
-                    if (b <= batas || a < 10) {
-                        text += "&nbsp&nbsp";
-                    }
-                    else if(b > 10 ){
-                        text += "";
-                    }
-                    else {
-                        text += 1;
-                    }
-                }
-                batas = batas - 1;
-
-                text += "<br>";
-            }
-            document.getElementById("bintang").innerHTML = text;
-            // document.getElementById("bintang").innerHTML = batas;
-        }
-
         function bintang3 (star) {
             var batas = star*2;
             for (var a=0; a<=star*2; a++) {
